@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion House</title>
+  <script>
+    const site = new URL('./dist/', window.location.href);
+    site.search = window.location.search;
+    site.hash = window.location.hash;
+    window.location.replace(site);
+  </script>
+</head>
+<body>
+  <a href="./dist/">Open Fashion House</a>
+</body>
+</html>

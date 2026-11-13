@@ -1,0 +1,13 @@
+{
+  "name": "fashion-house",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:offline": "node build-standalone.mjs",
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/motion.js && node --check dist/hero-interaction.js && node --check dist/presentation.js && node --check dist/data.js && node --check dist/collection-state.js && node --check dist/figma-pages.js && node --check dist/figma-data.js",
+    "test": "node --test tests/interaction-state.test.mjs"
+  }
+}

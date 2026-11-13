@@ -1,0 +1,20 @@
+:root { --fig-display:'Abril Fatface',Georgia,serif; --fig-body:'Outfit',Arial,sans-serif; --fig-mono:'Space Mono',monospace; --fig-pink:#ff2d78; --fig-green:#39ff14; --fig-blue:#00b0ff; --fig-yellow:#ffd600; --fig-black:#0a0a0a; --fig-white:#f5f0ff; }
+body.figma-site { --mono:var(--fig-mono); --sans:var(--fig-body); --display:var(--fig-display); background:var(--fig-black); color:var(--fig-white); font-family:var(--fig-body); }
+.figma-site .button { color:var(--button-fg,var(--fig-black)); font-family:var(--fig-mono); font-weight:700; text-transform:uppercase; }
+.figma-site .button::after { border:2px solid #0a0a0a; border-radius:0; box-shadow:4px 4px 0 #0a0a0a; }
+.figma-site .button:hover::after { border-radius:0; }
+.figma-site .button::before { border-width:1px; }
+.figma-site .button:hover::before { opacity:.3; }
+.figma-site .button:active::after { box-shadow:1px 1px 0 #0a0a0a; }
+.figma-site .empty-state { color:var(--fig-white); border-color:#ffffff40; }
+.figma-site .empty-state .display { font-family:var(--fig-display); text-transform:none; }
+.figma-site .demo-note { color:#aaa0b5; }
+.figma-site #toast { background:var(--fig-white); color:var(--fig-black); border:2px solid var(--fig-black); box-shadow:4px 4px 0 var(--fig-pink); font-family:var(--fig-body); }
+.figma-site dialog { background:var(--fig-white); color:var(--fig-black); border:3px solid #0a0a0a; box-shadow:7px 7px 0 var(--fig-pink); }
+.figma-site dialog h2 { font-family:var(--fig-display); font-weight:400; }
+.figma-site #art-cursor { background:var(--fig-green); border-color:var(--fig-black); color:var(--fig-black); }
+.figma-site .art-image::after { background:radial-gradient(150px circle at var(--pointer-x,50%) var(--pointer-y,50%),#ff80b499,transparent 75%) border-box; }
+.figma-site .edge-light { border-color:#ff76aaa0; }
+.figma-site [data-artwork] .local-light { background:radial-gradient(110px circle at var(--pointer-x,50%) var(--pointer-y,50%),#ffb5d318,transparent 80%); }
+.figma-site .skip-link { background:var(--fig-green); color:var(--fig-black); }
+.figma-site :focus-visible { outline-color:var(--fig-blue); }
